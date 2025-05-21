@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #2c3e50;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+nav button {
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    background: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+nav button:hover {
+    background: #e6b800;
+}
+
+nav button:active {
+    background: #e6b800;
+    font-weight: bold;
+}
+
+#content {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+    text-align: center;
+    flex: 1;
+}
+
+.tab-content {
+    display: block;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1em 0;
+}
+
+p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 1em;
+}
+
+.menu-item {
+    background: #fff;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-item h3 {
+    font-size: 1.3em;
+    margin-bottom: 0.3em;
+}
+
+.menu-item .price {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 1em auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 0.7em;
+    background: #ffcc00;
+    color: #222;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #e6b800;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5em;
+}
+
+footer p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0.5em 0;
+}
+
+footer .socials a {
+    color: #ffcc00;
+    margin: 0 0.5em;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .socials a:hover {
+    color: #e6b800;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    nav button {
+        padding: 0.4em 0.8em;
+        margin: 0.2em;
+        font-size: 0.9em;
+    }
+
+    footer p,
+    footer .socials a {
+        font-size: 0.9em;
+    }
+}
